@@ -14,6 +14,9 @@ Download alignment **ModelNet** [here](https://shapenet.cs.stanford.edu/media/mo
 python train_cls.py --model pointnet2_cls_msg --normal --log_dir pointnet2_cls_msg
 python test_cls.py --normal --log_dir pointnet2_cls_msg
 ```
+![](/visualizer/Train/classification_train.png)
+
+
 
 ### Performance
 
@@ -40,6 +43,9 @@ Download alignment **ShapeNet** [here](https://shapenet.cs.stanford.edu/media/sh
 python train_partseg.py --model pointnet2_part_seg_msg --normal --log_dir pointnet2_part_seg_msg
 python test_partseg.py --normal --log_dir pointnet2_part_seg_msg
 ```
+![](/visualizer/Test/part_seg_train.png)
+
+
 ### Performance
 ![](/visualizer/Test/part_seg_test.png)
 
@@ -68,16 +74,23 @@ Processed data will save in `data/stanford_indoor3d/`.
 python train_semseg.py --model pointnet2_sem_seg --test_area 5 --log_dir pointnet2_sem_seg
 python test_semseg.py --log_dir pointnet2_sem_seg --test_area 5 --visual
 ```
+![](/visualizer/Test/semi_seg_train.png)
+
+
 Visualization results will save in `log/sem_seg/pointnet2_sem_seg/visual/` and you can visualize these .obj file by [MeshLab](http://www.meshlab.net/).
 ### Performance on sub-points of raw dataset (processed by official PointNet [Link](https://shapenet.cs.stanford.edu/media/indoor3d_sem_seg_hdf5_data.zip))
+On training
 |Model  | Class avg IoU | 
 |--|--|
 | PointNet (Official) | 41.1|
 | PointNet (Pytorch) | 48.9|
 | PointNet2 (Official) |N/A | 
-| PointNet2_ssg (Pytorch) | **53.2**|
+| PointNet2_ssg (Pytorch) | 53.2|
+| PointNet2_ssg (Pytorch) | 53.2|
+| My Train PointNet2_ssg (17/128 epoches) | 45.3|
+
 ### Performance on raw dataset
-still on testing...
+![](/visualizer/Test/semantic_test.png)
 
 ## Visualization
 ### Using show3d_balls.py
