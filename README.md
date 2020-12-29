@@ -17,7 +17,7 @@ python test_cls.py --normal --log_dir pointnet2_cls_msg
 
 ### Performance
 
-![](/visualizer/test/classification_test.png)
+![](/visualizer/Test/classification_test.png)
 
 | Model | Accuracy |
 |--|--|
@@ -41,7 +41,7 @@ python train_partseg.py --model pointnet2_part_seg_msg --normal --log_dir pointn
 python test_partseg.py --normal --log_dir pointnet2_part_seg_msg
 ```
 ### Performance
-![](/visualizer/test/part_seg_test.png)
+![](/visualizer/Test/part_seg_test.png)
 
 | Model | Inctance avg IoU| Class avg IoU 
 |--|--|--|
@@ -50,7 +50,7 @@ python test_partseg.py --normal --log_dir pointnet2_part_seg_msg
 |PointNet (Pytorch)|	84.3	|81.1|	
 |PointNet2_SSG (Pytorch)|	84.9|	81.8	
 |PointNet2_MSG (Pytorch)|	85.4|	82.5	
-|My train PointNet2_MSG (Pytorch)|    **84.5**|    80.6    
+|My train PointNet2_MSG (Pytorch)|    **84.5**|    **80.6**    
 
 
 ## Semantic Segmentation
