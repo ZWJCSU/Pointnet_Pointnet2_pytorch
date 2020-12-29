@@ -74,7 +74,7 @@ Processed data will save in `data/stanford_indoor3d/`.
 python train_semseg.py --model pointnet2_sem_seg --test_area 5 --log_dir pointnet2_sem_seg
 python test_semseg.py --log_dir pointnet2_sem_seg --test_area 5 --visual
 ```
-![](/visualizer/Test/semi_seg_train.png)
+![](/visualizer/Test/semantic_train.png)
 
 
 Visualization results will save in `log/sem_seg/pointnet2_sem_seg/visual/` and you can visualize these .obj file by [MeshLab](http://www.meshlab.net/).
@@ -87,7 +87,7 @@ On training
 | PointNet2 (Official) |N/A | 
 | PointNet2_ssg (Pytorch) | 53.2|
 | PointNet2_ssg (Pytorch) | 53.2|
-| My Train PointNet2_ssg (17/128 epoches) | 45.3|
+| My Train PointNet2_ssg (17/128 epoches) | **45.3**|
 
 ### Performance on raw dataset
 ![](/visualizer/Test/semantic_test.png)
