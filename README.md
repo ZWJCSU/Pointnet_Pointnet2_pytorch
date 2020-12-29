@@ -43,7 +43,7 @@ Download alignment **ShapeNet** [here](https://shapenet.cs.stanford.edu/media/sh
 python train_partseg.py --model pointnet2_part_seg_msg --normal --log_dir pointnet2_part_seg_msg
 python test_partseg.py --normal --log_dir pointnet2_part_seg_msg
 ```
-![](/visualizer/Test/part_seg_train.png)
+![](/visualizer/Test/part_segment_train.png)
 
 
 ### Performance
@@ -74,7 +74,7 @@ Processed data will save in `data/stanford_indoor3d/`.
 python train_semseg.py --model pointnet2_sem_seg --test_area 5 --log_dir pointnet2_sem_seg
 python test_semseg.py --log_dir pointnet2_sem_seg --test_area 5 --visual
 ```
-![](/visualizer/Test/semantic_train.png)
+![](/visualizer/Train/semantic_train.png)
 
 
 Visualization results will save in `log/sem_seg/pointnet2_sem_seg/visual/` and you can visualize these .obj file by [MeshLab](http://www.meshlab.net/).
