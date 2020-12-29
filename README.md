@@ -87,10 +87,11 @@ cd visualizer
 bash build.sh 
 ## run one example 
 python show3d_balls.py
-```
-![](/visualizer/pic.png)
+``` 
+###My result
+![](/visualizer/show3d.png)
 ### Using MeshLab
-![](/visualizer/pic2.png)
+
 
 
 ## Reference By
